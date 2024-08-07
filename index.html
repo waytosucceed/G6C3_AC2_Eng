@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Activity 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="Logo_last.png">
+
+  <style>
+    .activity {
+      width: 100%;
+      height: auto;
+      background-color: rgb(156, 225, 247);
+      display: flex;
+      justify-content: center;
+      padding-top: 25px;
+    }
+    .activity p {
+      font-size: 18px;
+    }
+    #img-area {
+      width: 40%;
+    }
+    #content-area {
+      width: 60%;
+    }
+    #heading {
+      font-family: Harrington;
+      font-size: 40px;
+      font-weight: bolder;
+    }
+    table, th, td {
+      border: 2px solid black;
+      padding: 12px;
+      font-size: 22px; /* Increased font size */
+      text-align: center; /* Center-align text */
+    }
+    th {
+      color: red;
+    }
+    .serial-col {
+      width: 10%; /* Adjust width as needed */
+    }
+    .word-col {
+      width: 45%; /* Adjust width as needed */
+    }
+    .antonym-col {
+      width: 45%; /* Adjust width as needed */
+    }
+  </style>
+</head>
+<body>
+  <audio id="cheers">
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width: 100%; box-shadow: 5px 5px 10px rgb(0, 0, 0); padding-bottom: 10px;">
+    <img src="Logo.png" width="5%" style="float: left; margin-top: 25px;" class="img-responsive">
+    <span><img src="header.png" width="30%" height="auto" class="img-responsive"></span>
+  </div>
+
+  <br>
+  <br>
+  <center>
+    <h1 id="heading">Antonyms Overview</h1>
+    <br>
+  </center>
+  <div class="container text-center" style="font-size: 22px;">
+    <p class="text-start">
+      <span style="font-weight: 600;"><u>Antonyms Overview:</u></span><br><br>
+      Antonym(s) is a word or are words that mean the opposite of a given word. A word can have more than one antonym. If a word has more than one antonym, then it is not necessary that each of the antonyms will be used for the same purpose in the English language because the context decides which word is the best fit. 
+      <br>
+      Let us look at a few more important words and their antonyms:
+    </p>
+    <br>
+    <table class="table table-bordered" style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr>
+          <th class="serial-col">Serial No.</th>
+          <th class="word-col">The word</th>
+          <th class="antonym-col">Its antonym</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background-color: #f2f2f2;">
+          <td>1</td>
+          <td>Grateful</td>
+          <td>Ungrateful/Unappreciative</td>
+        </tr>
+        <tr style="background-color: #e6f7ff;">
+          <td>2</td>
+          <td>Amazed</td>
+          <td>Unimpressed</td>
+        </tr>
+        <tr style="background-color: #ffe6e6;">
+          <td>3</td>
+          <td>Cheerful</td>
+          <td>Grumpy</td>
+        </tr>
+        <tr style="background-color: #e6ffe6;">
+          <td>4</td>
+          <td>Private</td>
+          <td>Public</td>
+        </tr>
+        <tr style="background-color: #fff5e6;">
+          <td>5</td>
+          <td>Rough</td>
+          <td>Smooth</td>
+        </tr>
+        <tr style="background-color: #f9e6ff;">
+          <td>6</td>
+          <td>Qualified</td>
+          <td>Incompetent/Unfit</td>
+        </tr>
+        <tr style="background-color: #e6e6ff;">
+          <td>7</td>
+          <td>Fascinating</td>
+          <td>Dull</td>
+        </tr>
+        <tr style="background-color: #ffffe6;">
+          <td>8</td>
+          <td>Shy</td>
+          <td>Outgoing</td>
+        </tr>
+        <tr style="background-color: #e6f2ff;">
+          <td>9</td>
+          <td>Basic</td>
+          <td>Elaborate</td>
+        </tr>
+        <tr style="background-color: #ffebcc;">
+          <td>10</td>
+          <td>Proud</td>
+          <td>Humble</td>
+        </tr>
+        <tr style="background-color: #e6ffe6;">
+          <td>11</td>
+          <td>Brave</td>
+          <td>Cowardly</td>
+        </tr>
+        <tr style="background-color: #ffe6e6;">
+          <td>12</td>
+          <td>Generous</td>
+          <td>Selfish</td>
+        </tr>
+        <tr style="background-color: #ffffe6;">
+          <td>13</td>
+          <td>Obvious</td>
+          <td>Unclear</td>
+        </tr>
+        <tr style="background-color: #e6f7ff;">
+          <td>14</td>
+          <td>Calm</td>
+          <td>Frenzied/Agitated</td>
+        </tr>
+        <tr style="background-color: #f9e6ff;">
+          <td>15</td>
+          <td>Standard</td>
+          <td>Unconventional</td>
+        </tr>
+        <tr style="background-color: #e6ffe6;">
+          <td>16</td>
+          <td>Tight</td>
+          <td>Loose</td>
+        </tr>
+        <tr style="background-color: #e6e6ff;">
+          <td>17</td>
+          <td>Confident</td>
+          <td>Uncertain</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <h1 class="text-warning fw-5"><u>Word Meaning</u></h1>
+<br>
+    <p class="text-start">
+      <b>Perhaps:</b> Maybe; possibly.<br>
+      Sentence: Perhaps we can go to the beach this weekend if the weather is nice.
+    </p>
+    <p class="text-start">
+      <b>Property:</b> Something owned; a possession, such as land, buildings, or belongings.<br>
+      Sentence: The family purchased a beautiful property in the countryside with a large garden and a cosy house.
+    </p>
+    <p class="text-start">
+      <b>Mountainside:</b> The side or slope of a mountain.<br>
+      Sentence: The hikers trekked up the steep mountainside, taking in the breathtaking views of the valley below.
+    </p>
+    <br><br>
+    <a href="fun_time.html" class="btn btn-primary mb-5 btn-lg text-center" style="height: 50px; width: 200px; font-size: 22px;">Fun Time</a>
+  </div>
+</body>
+</html>
